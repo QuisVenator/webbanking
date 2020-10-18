@@ -5,6 +5,8 @@
  */
 package proyectofinal;
 
+import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -128,6 +130,11 @@ public class Gui_Depositos extends javax.swing.JPanel {
 
         jButton6.setBackground(new java.awt.Color(153, 237, 146));
         jButton6.setText("Depositar");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setBackground(new java.awt.Color(255, 51, 51));
         jButton7.setText("CANCELAR");
@@ -196,6 +203,10 @@ public class Gui_Depositos extends javax.swing.JPanel {
         txtNroCheque.setEditable(true);
         txtNroCheque.setEnabled(true);
     }//GEN-LAST:event_btnOpChequeActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        JOptionPane.showConfirmDialog(null,"Se realizará un deposito por 35500000","Deposito",JOptionPane.YES_NO_OPTION,JOptionPane.WARNING_MESSAGE);
+    }//GEN-LAST:event_jButton6ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

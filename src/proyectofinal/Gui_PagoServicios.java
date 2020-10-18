@@ -5,6 +5,8 @@
  */
 package proyectofinal;
 
+import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -170,9 +172,19 @@ public class Gui_PagoServicios extends javax.swing.JPanel {
 
         jButton6.setBackground(new java.awt.Color(153, 237, 146));
         jButton6.setText("PAGAR");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setBackground(new java.awt.Color(255, 51, 51));
         jButton7.setText("CANCELAR");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout formularioLayout = new javax.swing.GroupLayout(formulario);
         formulario.setLayout(formularioLayout);
@@ -243,6 +255,15 @@ public class Gui_PagoServicios extends javax.swing.JPanel {
     private void txtServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtServicioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtServicioActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        JOptionPane.showInputDialog(null,"Introduzca el PIN de transacción",null);
+        JOptionPane.showConfirmDialog(null,"Se realizo un pago al servicio ANDE, por montón de 35500000","Pago de servicio",JOptionPane.YES_NO_OPTION,JOptionPane.WARNING_MESSAGE);
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        JOptionPane.showConfirmDialog(null,"Esta seguro que quiere cancelar?","Pago de servicio",JOptionPane.YES_NO_OPTION,JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_jButton7ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
