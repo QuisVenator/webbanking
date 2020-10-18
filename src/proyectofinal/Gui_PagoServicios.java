@@ -257,12 +257,13 @@ public class Gui_PagoServicios extends javax.swing.JPanel {
     }//GEN-LAST:event_txtServicioActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        JOptionPane.showInputDialog(null,"Introduzca el PIN de transacción",null);
-        JOptionPane.showConfirmDialog(null,"Se realizo un pago al servicio ANDE, por montón de 35500000","Pago de servicio",JOptionPane.YES_NO_OPTION,JOptionPane.WARNING_MESSAGE);
+        JOptionPane.showConfirmDialog(null,"El pin de transaccion es 1234","Transaccion",JOptionPane.DEFAULT_OPTION,JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showInputDialog(null,"Introduzca el PIN de transacción","PIN de Transaccion",JOptionPane.WARNING_MESSAGE);
+        JOptionPane.showConfirmDialog(null,"Se realizo un pago al servicio ANDE, por montón de 35500000","Pago de servicio",JOptionPane.DEFAULT_OPTION,JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        JOptionPane.showConfirmDialog(null,"Esta seguro que quiere cancelar?","Pago de servicio",JOptionPane.YES_NO_OPTION,JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showConfirmDialog(null,"Esta seguro que quiere cancelar?","Cancelación",JOptionPane.YES_NO_OPTION,JOptionPane.ERROR_MESSAGE);
     }//GEN-LAST:event_jButton7ActionPerformed
 
 

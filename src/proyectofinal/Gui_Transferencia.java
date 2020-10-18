@@ -5,6 +5,8 @@
  */
 package proyectofinal;
 
+import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -73,9 +75,19 @@ public class Gui_Transferencia extends javax.swing.JPanel {
 
         jButton7.setBackground(new java.awt.Color(255, 51, 51));
         jButton7.setText("CANCELAR");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         jButton6.setBackground(new java.awt.Color(153, 237, 146));
         jButton6.setText("TRANSFERIR");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Cantidad a Transferir en Gs");
 
@@ -163,6 +175,15 @@ public class Gui_Transferencia extends javax.swing.JPanel {
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        JOptionPane.showInputDialog(null,"Introduzca el PIN de transacción","Transferencia",JOptionPane.WARNING_MESSAGE);
+        JOptionPane.showConfirmDialog(null,"Se realizó una transferencia a la cuenta 2","Transferencia",JOptionPane.DEFAULT_OPTION,JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+       JOptionPane.showConfirmDialog(null,"Esta seguro que quiere cancelar?","Transferencia",JOptionPane.YES_NO_OPTION,JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_jButton7ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

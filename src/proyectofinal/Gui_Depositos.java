@@ -138,6 +138,11 @@ public class Gui_Depositos extends javax.swing.JPanel {
 
         jButton7.setBackground(new java.awt.Color(255, 51, 51));
         jButton7.setText("CANCELAR");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         jLabel4.setText("Nro Cheque");
 
@@ -205,8 +210,12 @@ public class Gui_Depositos extends javax.swing.JPanel {
     }//GEN-LAST:event_btnOpChequeActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        JOptionPane.showConfirmDialog(null,"Se realizará un deposito por 35500000","Deposito",JOptionPane.YES_NO_OPTION,JOptionPane.WARNING_MESSAGE);
+        JOptionPane.showConfirmDialog(null,"Se realizó un deposito por montón de 35500000","Deposito",JOptionPane.DEFAULT_OPTION,JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        JOptionPane.showConfirmDialog(null,"Esta seguro que quiere cancelar?","Deposito",JOptionPane.YES_NO_OPTION,JOptionPane.ERROR_MESSAGE);
+    }//GEN-LAST:event_jButton7ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
